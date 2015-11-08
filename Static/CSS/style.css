@@ -17,6 +17,32 @@ h1, h2, h4 {
 
 img {
   display: block;
+  margin: 0px auto;
+}
+
+.color {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  margin: 20px 43px;
+  border: 1px solid black;
+  vertical-align: top;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#orange {
+  background-color: #f60;
+}
+
+#red {
+  background-color: red;
+}
+
+#purple {
+  background-color: purple;
 }
 
 
