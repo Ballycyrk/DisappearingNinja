@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Ninja: {{ color }}</title>
+    <link rel="stylesheet" type="text/css"
+    href="{{ url_for('static', filename='CSS/style.css') }}">
+  </head>
+  <body>
+    <div id="container">
+      {% if color %}
+        <p>{{ color }}</p>
+      {% else %}
+        <img src="{{ url_for('static', filename='Images/groupninja.png') }}"
+        alt="group">
+        <div id='blue' class="color">
+
+        </div>
+        <div id='orange' class="color">
+
+        </div>
+        <div id='red' class="color">
+
+        </div>
+        <div id='purple' class="color">
+
+        </div>
+      {% endif %}
+    </div>
+  </body>
+</html>

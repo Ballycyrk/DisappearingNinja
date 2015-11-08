@@ -6,4 +6,17 @@
 #container {
   width: 970px;
   margin: 0px auto;
+  background-color: gray;
+  color: yellow;
 }
+
+h1, h2, h4 {
+  margin: 5px;
+  text-align: center;
+}
+
+img {
+  display: block;
+}
+
+

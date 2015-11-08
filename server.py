@@ -4,7 +4,11 @@ app.secret_key="pigsinablanket"
 @app.route('/')
 def index():
   return render_template('index.html')
-@app.route('/users/,username.')
-def show_user_profile(username):
-  return render_template('index.html', username=username)
+@app.route('/ninja')
+def groupHug():
+  return render_template('ninja.html')
+@app.route('/ninja/<color>')
+def show_ninja(color):
+  print color
+  return render_template('ninja.html', color=color)
 app.run(debug=True)
