@@ -19,9 +19,7 @@
   <body>
     <div id="container">
       {% if color %}
-          <a href="/">
-            <img src='/static/Images/{{color}}.png'>
-          </a>
+          <a href="/"><img src='/static/Images/{{color}}.png' alt='Ninja'></a>
       {% else %}
         <img src="{{ url_for('static', filename='Images/groupninja.png') }}"
         alt="group">
@@ -29,13 +27,13 @@
           <a href="/ninja/blue"><h2>Click Me!</h2></a>
         </div>
         <div id='orange' class="color">
-          <h2>Click Me!</h2>
+          <a href="/ninja/orange"><h2>Click Me!</h2></a>
         </div>
         <div id='red' class="color">
-          <h2>Click Me!</h2>
+          <a href="/ninja/red"><h2>Click Me!</h2></a>
         </div>
         <div id='purple' class="color">
-          <h2>Click Me!</h2>
+          <a href="/ninja/purple"><h2>Click Me!</h2></a>
         </div>
       {% endif %}
     </div>
