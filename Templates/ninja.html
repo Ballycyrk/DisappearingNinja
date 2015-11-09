@@ -5,16 +5,28 @@
     <title>Ninja: {{ color }}</title>
     <link rel="stylesheet" type="text/css"
     href="{{ url_for('static', filename='CSS/style.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#blue a').click(function(){
+          color = 'blue'
+          alert(color)
+        })
+      })
+    </script>
   </head>
   <body>
     <div id="container">
       {% if color %}
-        <p>{{ color }}</p>
+          <a href="/">
+            <img src='/static/Images/{{color}}.png'>
+          </a>
       {% else %}
         <img src="{{ url_for('static', filename='Images/groupninja.png') }}"
         alt="group">
         <div id='blue' class="color">
-          <h2>Click Me!</h2>
+          <a href="/ninja/blue"><h2>Click Me!</h2></a>
         </div>
         <div id='orange' class="color">
           <h2>Click Me!</h2>
